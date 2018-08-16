@@ -22,6 +22,10 @@ var firstTime=""
 var frequency="";
 
 
+
+setInterval({
+
+
 database.ref().on("child_added", function(childSnapshot){
 
 
@@ -80,7 +84,7 @@ $("#add-train").on("click", function(event){
 
 
 
-
+} ,1000);
 
 
 
